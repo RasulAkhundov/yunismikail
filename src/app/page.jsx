@@ -17,11 +17,6 @@ import Bg4 from '/public/img/bg4.png';
 
 const Home = () => {
   const { scroll } = useLocomotiveScroll();
-  const [delay, setDelay] = useState(window.localStorage.getItem('loading') === "true" ? 3 : 0);
-
-  useEffect(() => {
-    setDelay(0);
-  }, [delay])
 
   return (
     <motion.div
@@ -29,7 +24,7 @@ const Home = () => {
       animate="in"
       exit="out"
       variants={variants}
-      transition={pageTransition(delay)}
+      transition={pageTransition(0)}
     >
       {/* <h2>her sehife ucun ayri description</h2> */}
       <Navbar />

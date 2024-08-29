@@ -49,7 +49,7 @@ html {
 .loading__wrapper {
    width: 100%;
    height: 100svh;
-   position: fixed;
+   position: relative;
    z-index: 99;
    background: #fff;
    display: flex;

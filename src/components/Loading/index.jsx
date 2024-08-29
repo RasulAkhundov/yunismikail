@@ -1,25 +1,14 @@
 "use client"
 import { useEffect, useState, useRef } from 'react';
-
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import $ from 'jquery';
 import { useLocomotiveScroll } from 'react-locomotive-scroll';
-
-window?.localStorage.setItem('loading', true);
 
 const Loading = ({ active = true }) => {
    const { scroll } = useLocomotiveScroll();
    const [loadingPercentage, setLoadingPercentage] = useState(0);
    const intervalRef = useRef(null);
-
-   useEffect(() => {
-
-      const loadingTimer = setTimeout(() => {
-         window.localStorage.setItem('loading', false);
-      }, 3000); // Loading completes after 3 seconds
-
-      return () => clearTimeout(loadingTimer);
-   }, [])
 
    useGSAP(() => {
       let tl = gsap.timeline();
@@ -52,7 +41,6 @@ const Loading = ({ active = true }) => {
          if (scroll) {
             scroll.start();
          }
-         window.localStorage.setItem('loading', false);
       }, 3000)
    }, [scroll]);
 

@@ -15,6 +15,13 @@ const ScrollContainer = ({ children }) => {
    const containerRef = useRef(null);
    const params = useParams()
    const { scroll } = useLocomotiveScroll();
+   const [loading, setLoading] = useState(true);
+
+   useEffect(() => {
+      setTimeout(() => {
+         setLoading(false)
+      }, 3000)
+   }, []);
 
    return (
       // <div>
@@ -51,10 +58,9 @@ const ScrollContainer = ({ children }) => {
       >
          <div data-scroll-container ref={containerRef} style={{ width: '100vw' }}>
             <div className="Layout">
-               <Loading />
                {/* <Navbar /> */}
                <AnimatePresence mode="wait">
-                  {children}
+                  {loading ? <Loading /> : children}
                </AnimatePresence>
             </div>
          </div>

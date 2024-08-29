@@ -19,11 +19,6 @@ import Pro8 from '/public/img/pro8.jpeg';
 // };
 
 const Bufer = () => {
-   const [delay, setDelay] = useState(window.localStorage.getItem('loading') === "true" ? 3 : 0);
-
-   useEffect(() => {
-      setDelay(0);
-   }, [delay])
 
    return (
       <motion.div
@@ -31,7 +26,7 @@ const Bufer = () => {
          animate="in"
          exit="out"
          variants={variants}
-         transition={pageTransition(delay)}
+         transition={pageTransition(0)}
       >
          <Navbar />
          <div id="projectPage" className="project__bufer" data-scroll-section>

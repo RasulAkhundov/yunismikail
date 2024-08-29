@@ -1,7 +1,7 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Navbar from "@/layout/Navbar";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { variants, pageTransition } from "@/constants/framerPageTransition";
 import Contact from "@/layout/Contact";
 import Image from "next/image";
@@ -20,12 +20,6 @@ import Tel8 from '/public/img/tel8.jpeg';
 // };
 
 const Telekonek = () => {
-   const [isVisible, setIsVisible] = useState(true);
-   const [delay, setDelay] = useState(window.localStorage.getItem('loading') === "true" ? 3 : 0);
-
-   useEffect(() => {
-      setDelay(0);
-   }, [delay])
 
    return (
       <motion.div
@@ -33,7 +27,7 @@ const Telekonek = () => {
          animate="in"
          exit="out"
          variants={variants}
-         transition={pageTransition(delay)}
+         transition={pageTransition(0)}
       >
          <Navbar />
          <div
@@ -235,6 +229,7 @@ const Telekonek = () => {
          </div>
          <Contact />
       </motion.div>
+
    )
 }
 

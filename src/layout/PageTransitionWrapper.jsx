@@ -5,8 +5,8 @@ import { motion } from 'framer-motion';
 const PageTransitionWrapper = () => {
    return (
       <motion.div
-         initial={{ background: 'transparent' }}
-         animate={{ background: 'transparent' }}
+         initial={{ background: 'rgba(0, 0, 0, 0)' }}
+         animate={{ background: 'rgba(0, 0, 0, 0)' }}
          exit={{ background: 'rgba(0, 0, 0, .7)' }}
          transition={{ duration: .5, ease: 'easeOut' }}
          className="page-transition__wrapper">
