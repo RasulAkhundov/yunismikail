@@ -58,7 +58,7 @@ export default function RootLayout({ children }) {
           </PageAnimatePresence>
         </ScrollContainer>
 
-        <script src="https://kit.fontawesome.com/eec5ec337b.js" crossOrigin="anonymous"></script>
+        {/* <script src="https://kit.fontawesome.com/eec5ec337b.js" crossOrigin="anonymous"></script> */}
       </body>
     </html>
   );
