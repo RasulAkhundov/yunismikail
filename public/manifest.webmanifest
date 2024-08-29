@@ -1,0 +1,36 @@
+{
+   "name": "Yunis Mikayilov — Product Designer",
+   "short_name": "Yunis Mikayilov",
+   "background_color": "#fff",
+   "theme_color": "#fff",
+   "start_url": "/",
+   "scope": "/",
+   "display": "standalone",
+   "icons": [
+      {
+         "src": "/favicon/64x64.svg",
+         "sizes": "64x64",
+         "type": "image/png",
+         "purpose": "any maskable"
+      },
+      {
+         "src": "/favicon/128x128.svg",
+         "sizes": "128x128",
+         "type": "image/png",
+         "purpose": "any maskable"
+      },
+      {
+         "src": "/favicon/256x256.svg",
+         "sizes": "256x256",
+         "type": "image/png",
+         "purpose": "any maskable"
+      },
+      {
+         "src": "/favicon/512x512.png",
+         "sizes": "512x512",
+         "type": "image/png",
+         "purpose": "any maskable"
+      }
+   ],
+   "splash_pages": null
+}
