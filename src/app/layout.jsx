@@ -56,7 +56,6 @@ export default function RootLayout({ children }) {
             <PageTransitionWrapper />
           </PageAnimatePresence>
         </ScrollContainer>
-
       </body>
     </html>
   );
