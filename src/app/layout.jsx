@@ -25,7 +25,6 @@ export default function RootLayout({ children }) {
         <meta name="robots" content="index, follow" />
         <meta name="keywords"
           content="yunis, yunismikail, yunis mikail, mikayilov, yunis mikayilov, product, designer, design, product design, product designer, UX-UI, UX/UI" />
-        <meta name="description" content="Hello! I'm Yunis. A product designer based in Warsaw" />
         <meta property="og:site_name" content="yunismikail.com" />
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Yunis Mikayilov — Product Designer" />
