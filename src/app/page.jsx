@@ -184,7 +184,7 @@ const Home = () => {
 
               {
                 testColumn1.map((t, i) => (
-                  <div className="testimonial__card">
+                  <div className="testimonial__card" key={i}>
 
                     {
                       t.authorName &&
@@ -221,7 +221,7 @@ const Home = () => {
             <div className="single-testimonial__column">
               {
                 testColumn2.map((t, i) => (
-                  <div className="testimonial__card">
+                  <div className="testimonial__card" key={i}>
 
                     {
                       t.authorName &&
@@ -258,7 +258,7 @@ const Home = () => {
             <div className="single-testimonial__column">
               {
                 testColumn3.map((t, i) => (
-                  <div className="testimonial__card">
+                  <div className="testimonial__card" key={i}>
 
                     {
                       t.authorName &&
