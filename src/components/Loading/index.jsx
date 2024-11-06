@@ -29,7 +29,7 @@ const Loading = ({ active = true }) => {
       });
 
       tl.add(() => {
-         body.classList.remove('overflow-hidden');
+         // body.classList.remove('overflow-hidden');
       });
    });
 
@@ -48,7 +48,7 @@ const Loading = ({ active = true }) => {
       const body = document.body;
 
       if (active && intervalRef.current === null) {
-         body.classList.add('overflow-hidden');
+         // body.classList.add('overflow-hidden');
          intervalRef.current = setInterval(() => {
             setLoadingPercentage((prev) => {
                if (prev < 100) {
@@ -65,7 +65,7 @@ const Loading = ({ active = true }) => {
       }
 
       if (!active) {
-         body.classList.remove('overflow-hidden');
+         // body.classList.remove('overflow-hidden');
       }
    }, [active]);
 

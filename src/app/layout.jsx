@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.scss";
+import dynamic from "next/dynamic";
 
 ///Import Layout
 import ScrollContainer from "@/utils/ScrollContainer";
