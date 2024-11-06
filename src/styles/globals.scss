@@ -37,6 +37,14 @@ body {
    font-family: 'Gilroy-Regular';
 }
 
+.image-opacity-0 {
+   opacity: 0;
+}
+
+img {
+   transition: all .5s ease-out !important;
+}
+
 .nav-contact__btn {
    cursor: pointer;
 }

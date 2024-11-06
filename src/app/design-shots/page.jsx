@@ -70,43 +70,121 @@ const DesignShots = () => {
             <div className="page-container__inner">
 
                <div className="single-image__wrapper">
-                  <Image src={Shot1} alt="design shot 1" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot1}
+                     alt="design shot 1"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="multiple-image__wrapper">
-                  <Image src={Shot2} alt="design shot 2" loading="lazy" className="digital-shot-image" />
-                  <Image src={Shot3} alt="design shot 3" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot2}
+                     alt="design shot 2"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
+                  <Image
+                     src={Shot3}
+                     alt="design shot 3"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="single-image__wrapper">
-                  <Image src={Shot4} alt="design shot 4" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot4}
+                     alt="design shot 4"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="multiple-image__wrapper">
-                  <Image src={Shot5} alt="design shot 5" loading="lazy" className="digital-shot-image" />
-                  <Image src={Shot6} alt="design shot 6" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot5}
+                     alt="design shot 5"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
+                  <Image
+                     src={Shot6}
+                     alt="design shot 6"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="single-image__wrapper">
-                  <Image src={Shot7} alt="design shot 7" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot7}
+                     alt="design shot 7"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="multiple-image__wrapper">
-                  <Image src={Shot8} alt="design shot 8" loading="lazy" className="digital-shot-image" />
-                  <Image src={Shot9} alt="design shot 9" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot8}
+                     alt="design shot 8"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
+                  <Image
+                     src={Shot9}
+                     alt="design shot 9"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="single-image__wrapper">
-                  <Image src={Shot10} alt="design shot 10" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot10}
+                     alt="design shot 10"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="multiple-image__wrapper">
-                  <Image src={Shot11} alt="design shot 11" loading="lazy" className="digital-shot-image" />
-                  <Image src={Shot12} alt="design shot 12" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot11}
+                     alt="design shot 11"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
+                  <Image
+                     src={Shot12}
+                     alt="design shot 12"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
 
                <div className="single-image__wrapper">
-                  <Image src={Shot13} alt="design shot 13" loading="lazy" className="digital-shot-image" />
+                  <Image
+                     src={Shot13}
+                     alt="design shot 13"
+                     loading="lazy"
+                     className="digital-shot-image image-opacity-0"
+                     onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                </div>
             </div>
          </div>

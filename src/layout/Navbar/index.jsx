@@ -25,7 +25,13 @@ const Navbar = () => {
                <div className="nav-right">
                   <div className="open-for-work__wrapper">
                      <div className="image__block">
-                        <Image src={PersonMe} width={100} height={100} />
+                        <Image
+                           src={PersonMe}
+                           width={100}
+                           height={100}
+                           className="image-opacity-0"
+                           onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                        />
                         <div className="online__icon"></div>
                      </div>
 

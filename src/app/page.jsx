@@ -140,9 +140,24 @@ const Home = () => {
                 <div className="image__block">
                   {/* <Image src={Bg1} alt="" />
                 <Image src={Bg2} alt="" /> */}
-                  <Image src={Thrusted1} alt="thrusted" />
-                  <Image src={Thrusted2} alt="thrusted" />
-                  <Image src={Thrusted3} alt="thrusted" />
+                  <Image
+                    src={Thrusted1}
+                    alt="thrusted"
+                    className="image-opacity-0"
+                    onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
+                  <Image
+                    src={Thrusted2}
+                    alt="thrusted"
+                    className="image-opacity-0"
+                    onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
+                  <Image
+                    src={Thrusted3}
+                    alt="thrusted"
+                    className="image-opacity-0"
+                    onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                  />
                 </div>
 
                 <span>Trusted by 30+ Companies</span>
@@ -155,16 +170,36 @@ const Home = () => {
       <div id="project" data-scroll-section>
         <div className="project-container row">
           <Link target="_blank" href="https://onveiv.com/" className="col-lg-6 project-div thin-div">
-            <Image src={Bg3} alt="Onveiv" />
+            <Image
+              src={Bg3}
+              alt="Onveiv"
+              className="image-opacity-0"
+              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+            />
           </Link>
           <Link href="/telekonek" className="col-lg-6 project-div thin-div">
-            <Image src={Bg1} alt="Telekonek" />
+            <Image
+              src={Bg1}
+              alt="Telekonek"
+              className="image-opacity-0"
+              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+            />
           </Link>
           <Link target="_black" href="https://www.figma.com/proto/yZT6qwcyMzSJjywTMvo1NO/Hauss-Showcase?page-id=123%3A729&node-id=3601-10048&node-type=canvas&viewport=1254%2C732%2C0.06&t=CU8y2XzLHn67aLcg-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=3601%3A10048&share=1" className="col-lg-6 project-div wide-div">
-            <Image src={Bg2} alt="hauss" />
+            <Image
+              src={Bg2}
+              alt="hauss"
+              className="image-opacity-0"
+              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+            />
           </Link>
           <Link target="_blank" href={'https://www.figma.com/proto/gjq6NQ7107qLnWE4jhLkZz/Triper-Showcase?page-id=1138%3A406&node-id=6201-15478&node-type=canvas&viewport=1431%2C-174%2C0.05&t=ZOHZFtYuLSg0s9Pv-1&scaling=min-zoom&content-scaling=fixed'} className="col-lg-6 project-div wide-div">
-            <Image src={Bg4} alt="Triper" />
+            <Image
+              src={Bg4}
+              alt="Triper"
+              className="image-opacity-0"
+              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+            />
           </Link>
         </div>
       </div>
@@ -189,7 +224,11 @@ const Home = () => {
                     {
                       t.authorName &&
                       <div className="author__wrapper">
-                        <Image src={t.authorImg} width={40} height={40} />
+                        <Image
+                          src={t.authorImg}
+                          width={40}
+                          height={40}
+                        />
 
                         <div className="author__info">
                           <h5>{t.authorName}</h5>
@@ -211,7 +250,12 @@ const Home = () => {
                       }
 
                       <div className="logo__wrapper" style={{ width: t.width ? `${t.width}px` : '99px' }}>
-                        <Image src={t.logo} width={100} height={100} style={{ width: '100%', height: 'auto' }} />
+                        <Image
+                          src={t.logo}
+                          width={100}
+                          height={100}
+                          style={{ width: '100%', height: 'auto' }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -226,7 +270,11 @@ const Home = () => {
                     {
                       t.authorName &&
                       <div className="author__wrapper">
-                        <Image src={t.authorImg} width={40} height={40} />
+                        <Image
+                          src={t.authorImg}
+                          width={40}
+                          height={40}
+                        />
 
                         <div className="author__info">
                           <h5>{t.authorName}</h5>
@@ -248,7 +296,12 @@ const Home = () => {
                       }
 
                       <div className="logo__wrapper" style={{ width: t.width ? `${t.width}px` : '99px' }}>
-                        <Image src={t.logo} width={100} height={100} style={{ width: '100%', height: 'auto' }} />
+                        <Image
+                          src={t.logo}
+                          width={100}
+                          height={100}
+                          style={{ width: '100%', height: 'auto' }}
+                        />
                       </div>
                     </div>
                   </div>
@@ -263,7 +316,11 @@ const Home = () => {
                     {
                       t.authorName &&
                       <div className="author__wrapper">
-                        <Image src={t.authorImg} width={40} height={40} />
+                        <Image
+                          src={t.authorImg}
+                          width={40}
+                          height={40}
+                        />
 
                         <div className="author__info">
                           <h5>{t.authorName}</h5>
@@ -285,7 +342,12 @@ const Home = () => {
                       }
 
                       <div className="logo__wrapper" style={{ width: t.width ? `${t.width}px` : '99px' }}>
-                        <Image src={t.logo} width={100} height={100} style={{ width: '100%', height: 'auto' }} />
+                        <Image
+                          src={t.logo}
+                          width={100}
+                          height={100}
+                          style={{ width: '100%', height: 'auto' }}
+                        />
                       </div>
                     </div>
                   </div>

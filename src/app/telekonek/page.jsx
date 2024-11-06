@@ -42,28 +42,14 @@ const Telekonek = () => {
                      <div className="project-title">Telekonek is an eSIM app that revolutionizes mobile connectivity with its
                         seamless experience.</div>
 
-                     {/* <!-- <div className="work-info">
-                     <div className="info-box">
-                        <div className="work-type">Role</div>
-                        <div className="work-name">Lead Designer</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Employer</div>
-                        <div className="work-name">The Athletic</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Platforms</div>
-                        <div className="work-name">iOS, Android</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Areas</div>
-                        <div className="work-name">Strategy, Design</div>
-                     </div>
-                  </div> --> */}
-
                      <div className="project-text-area">
                         <div className="work-image-block-hero">
-                           <Image src={Tel1} alt="" className="work-image" />
+                           <Image
+                              src={Tel1}
+                              alt="telekonek 1"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">Where did all this begin?</div>
                         <div className="text-body">Physical SIM cards are becoming increasingly obsolete, giving way to
@@ -121,7 +107,12 @@ const Telekonek = () => {
                         </div>
 
                         <div className="work-image-block-hero">
-                           <Image src={Tel2} alt="" className="work-image" />
+                           <Image
+                              src={Tel2}
+                              alt="telekonek 2"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">
                            Explore eSIMs
@@ -132,7 +123,12 @@ const Telekonek = () => {
                         </div>
 
                         <div className="work-image-block-hero">
-                           <Image src={Tel3} alt="" className="work-image" />
+                           <Image
+                              src={Tel3}
+                              alt="telekonek 2"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">
                            Choose ideal package
@@ -144,7 +140,12 @@ const Telekonek = () => {
 
 
                         <div className="work-image-block-hero">
-                           <Image src={Tel4} alt="" className="work-image" />
+                           <Image
+                              src={Tel4}
+                              alt="telekonek 4"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">
                            Cart & Checkout
@@ -155,10 +156,13 @@ const Telekonek = () => {
                            simultaneously.
                         </div>
 
-
-
                         <div className="work-image-block-hero">
-                           <Image src={Tel5} alt="" className="work-image" />
+                           <Image
+                              src={Tel5}
+                              alt="telekonek 5"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">
                            Installing eSIM
@@ -168,9 +172,13 @@ const Telekonek = () => {
                            list of compatible networks by country, ensuring users stay connected at all the time.
                         </div>
 
-
                         <div className="work-image-block-hero">
-                           <Image src={Tel6} alt="" className="work-image" />
+                           <Image
+                              src={Tel6}
+                              alt="telekonek 6"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">
                            Order History
@@ -180,7 +188,12 @@ const Telekonek = () => {
                         </div>
 
                         <div className="work-image-block-hero">
-                           <Image src={Tel7} alt="" className="work-image" />
+                           <Image
+                              src={Tel7}
+                              alt="telekonek 7"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">
                            Dashboard
@@ -190,7 +203,12 @@ const Telekonek = () => {
                         </div>
 
                         <div className="work-image-block-hero">
-                           <Image src={Tel8} alt="" className="work-image" />
+                           <Image
+                              src={Tel8}
+                              alt="telekonek 8"
+                              className="work-image image-opacity-0"
+                              onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
+                           />
                         </div>
                         <div className="text-title">
                            In the end…
@@ -204,29 +222,10 @@ const Telekonek = () => {
 
                      </div>
                   </div>
-                  {/* <div className="project-bottom">
-                  <h1>Light Mode</h1>
-                  <div className="project-title">Creating a brand new theme from the ground up for all mobile users of The Athletic — alongside a
-                     system of colour mappings and guidelines internally for our product team.</div>
-                  <div className="work-info">
-                     <div className="info-box">
-                        <div className="work-type">Role</div>
-                        <div className="work-name">+6.2%</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Employer</div>
-                        <div className="work-name">+1.3%
-                        </div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Platforms</div>
-                        <div className="work-name">iOS, Android</div>
-                     </div>
-                  </div>
-               </div> */}
                </div>
             </div>
          </div>
+
          <Contact />
       </motion.div>
 
