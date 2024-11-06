@@ -9,7 +9,13 @@ const Contact = () => {
                   hello. <br />
                   yunismikail@gmail.com</p>
                <div className="contact-me">
-                  <a href="mailto:yunismikail@gmail.com" className="c-button">Contact via Email</a>
+                  {/* <a  className="">Contact via Email</a> */}
+
+                  <a href="mailto:yunismikail@gmail.com" className="animated-button__cover c-button">
+                     <span className="animated-button__text">Contact via Email</span>
+                     <span className="animated-button__text">Let's talk</span>
+                  </a>
+
                   <ul>
                      {/* <!-- <li className="insta"><a href="" ><i className="fa-brands fa-instagram"></i></a></li>
                      <li className="linkedin"><a href="" ><i className="fa-brands fa-linkedin-in"></i></a></li>

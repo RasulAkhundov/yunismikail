@@ -63,8 +63,8 @@ const DesignShots = () => {
          <div className="design-shots__container page__container" data-scroll-section>
 
             <div className="section-header__wrapper">
-               <span>project shots</span>
-               <h2>Our recent work</h2>
+               <span>design shots</span>
+               <h2>Recent work</h2>
             </div>
 
             <div className="page-container__inner">

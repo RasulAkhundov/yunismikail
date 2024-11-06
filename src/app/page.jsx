@@ -130,11 +130,17 @@ const Home = () => {
               </a>
             </p>
             <div className="button__wrapper">
-              <a target="_blank" className="resume-button nav-contact__btn"
-                onClick={() => scroll.scrollTo("bottom", {
-                  duration: 1,
-                })}
-              >Work with me</a>
+
+              <div className="animated-button__cover"
+                onClick={() => {
+                  scroll.scrollTo("bottom", {
+                    duration: .5,
+                  });
+                }
+                }>
+                <span className="animated-button__text">Work with me</span>
+                <span className="animated-button__text">Let's talk</span>
+              </div>
 
               <div className="trusted__wrapper">
                 <div className="image__block">
