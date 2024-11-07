@@ -17,7 +17,6 @@ const PageAnimatePresence = ({ children }) => {
          <motion.div key={pathname}>
             <FrozenRoute>
                {children}
-
             </FrozenRoute>
          </motion.div>
       </AnimatePresence>

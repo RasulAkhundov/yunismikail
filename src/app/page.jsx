@@ -108,6 +108,7 @@ const Home = () => {
       exit="out"
       variants={variants}
       transition={pageTransition(0)}
+      style={{ width: '100%' }}
     >
       {/* <h2>her sehife ucun ayri description</h2> */}
       <Navbar />
@@ -144,8 +145,6 @@ const Home = () => {
 
               <div className="trusted__wrapper">
                 <div className="image__block">
-                  {/* <Image src={Bg1} alt="" />
-                <Image src={Bg2} alt="" /> */}
                   <Image
                     src={Thrusted1}
                     alt="thrusted"
@@ -234,6 +233,7 @@ const Home = () => {
                           src={t.authorImg}
                           width={40}
                           height={40}
+                          alt={t.alt}
                         />
 
                         <div className="author__info">
@@ -261,6 +261,7 @@ const Home = () => {
                           width={100}
                           height={100}
                           style={{ width: '100%', height: 'auto' }}
+                          alt={t.alt}
                         />
                       </div>
                     </div>
@@ -280,6 +281,7 @@ const Home = () => {
                           src={t.authorImg}
                           width={40}
                           height={40}
+                          alt={t.alt}
                         />
 
                         <div className="author__info">
@@ -307,6 +309,7 @@ const Home = () => {
                           width={100}
                           height={100}
                           style={{ width: '100%', height: 'auto' }}
+                          alt={t.alt}
                         />
                       </div>
                     </div>
@@ -326,6 +329,7 @@ const Home = () => {
                           src={t.authorImg}
                           width={40}
                           height={40}
+                          alt={t.alt}
                         />
 
                         <div className="author__info">
@@ -353,6 +357,7 @@ const Home = () => {
                           width={100}
                           height={100}
                           style={{ width: '100%', height: 'auto' }}
+                          alt={t.alt}
                         />
                       </div>
                     </div>

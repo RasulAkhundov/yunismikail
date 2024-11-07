@@ -36,28 +36,10 @@ const Bufer = () => {
                      <h1>Designing Bufer.az</h1>
                      <div className="project-title">Bufer.az is a platform for listing new and second hand car parts &
                         accessories, making it easy for buyers and sellers to connect.</div>
-                     {/* <!-- <div className="work-info">
-                     <div className="info-box">
-                        <div className="work-type">Role</div>
-                        <div className="work-name">Lead Designer</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Employer</div>
-                        <div className="work-name">The Athletic</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Platforms</div>
-                        <div className="work-name">iOS, Android</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Areas</div>
-                        <div className="work-name">Strategy, Design</div>
-                     </div>
-                  </div> --> */}
 
                      <div className="project-text-area">
                         <div className="work-image-block-hero">
-                           <Image src={Pro1} alt="" loading="lazy" className="work-image" />
+                           <Image src={Pro1} alt="bufer 1" loading="lazy" className="work-image" />
                         </div>
                         <div className="text-title">Where did all this begin?</div>
                         <div className="text-body">As the number of car owners continues to rise, so does the demand for
@@ -101,7 +83,7 @@ const Bufer = () => {
                         </div>
 
                         <div className="work-image-block-hero">
-                           <Image src={Pro2} alt="" className="work-image" />
+                           <Image src={Pro2} alt="bufer 2" className="work-image" />
                         </div>
                         <div className="text-title">
                            Searching by brand
@@ -115,7 +97,7 @@ const Bufer = () => {
 
 
                         <div className="work-image-block-hero">
-                           <Image src={Pro3} alt="" className="work-image" />
+                           <Image src={Pro3} alt="bufer 3" className="work-image" />
                         </div>
                         <div className="text-title">
                            Search Results
@@ -128,7 +110,7 @@ const Bufer = () => {
 
 
                         <div className="work-image-block-hero">
-                           <Image src={Pro4} alt="" className="work-image" />
+                           <Image src={Pro4} alt="bufer 4" className="work-image" />
                         </div>
                         <div className="text-title">
                            Listing Screen
@@ -141,7 +123,7 @@ const Bufer = () => {
 
 
                         <div className="work-image-block-hero">
-                           <Image src={Pro5} alt="" className="work-image" />
+                           <Image src={Pro5} alt="bufer 5" className="work-image" />
                         </div>
                         <div className="text-title">
                            Seller Profile
@@ -152,7 +134,7 @@ const Bufer = () => {
 
 
                         <div className="work-image-block-hero">
-                           <Image src={Pro6} alt="" className="work-image" />
+                           <Image src={Pro6} alt="bufer 6" className="work-image" />
                         </div>
                         <div className="text-title">
                            Personalized Experience
@@ -163,7 +145,7 @@ const Bufer = () => {
                         </div>
 
                         <div className="work-image-block-hero">
-                           <Image src={Pro7} alt="" className="work-image" />
+                           <Image src={Pro7} alt="bufer 7" className="work-image" />
                         </div>
                         <div className="text-title">
                            Chatting Screen
@@ -174,7 +156,7 @@ const Bufer = () => {
                         </div>
 
                         <div className="work-image-block-hero">
-                           <Image src={Pro8} alt="" className="work-image" />
+                           <Image src={Pro8} alt="bufer 8" className="work-image" />
                         </div>
                         <div className="text-title">
                            In the end…
@@ -190,26 +172,6 @@ const Bufer = () => {
 
                      </div>
                   </div>
-                  {/* <!-- <div className="project-bottom">
-                  <h1>Light Mode</h1>
-                  <div className="project-title">Creating a brand new theme from the ground up for all mobile users of The Athletic — alongside a
-                     system of colour mappings and guidelines internally for our product team.</div>
-                  <div className="work-info">
-                     <div className="info-box">
-                        <div className="work-type">Role</div>
-                        <div className="work-name">+6.2%</div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Employer</div>
-                        <div className="work-name">+1.3%
-                        </div>
-                     </div>
-                     <div className="info-box">
-                        <div className="work-type">Platforms</div>
-                        <div className="work-name">iOS, Android</div>
-                     </div>
-                  </div>
-               </div> --> */}
                </div>
             </div>
          </div>

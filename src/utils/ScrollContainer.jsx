@@ -31,16 +31,10 @@ const ScrollContainer = ({ children }) => {
             lerp: 0.075,
             direction: "vertical",
             smartphone: {
-               smooth: true,
-               direction: "vertical",
-               touchMultiplier: 1,
-               multiplier: 2
+               smooth: false,
             },
             tablet: {
-               smooth: true,
-               direction: "vertical",
-               touchMultiplier: 1,
-               multiplier: 2
+               smooth: false,
             }
          }}
          watch={[params]}
@@ -56,7 +50,7 @@ const ScrollContainer = ({ children }) => {
             // console.log("Updated, but not on location change!")
          }}
       >
-         <div data-scroll-container ref={containerRef} style={{ width: '100vw' }}>
+         <div data-scroll-container ref={containerRef}>
             <div className="Layout">
                {/* <Navbar /> */}
                <AnimatePresence mode="wait">
