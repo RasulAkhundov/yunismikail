@@ -108,7 +108,6 @@ const Home = () => {
       exit="out"
       variants={variants}
       transition={pageTransition(0)}
-      style={{ width: '100%' }}
     >
       {/* <h2>her sehife ucun ayri description</h2> */}
       <Navbar />
@@ -116,7 +115,7 @@ const Home = () => {
         <div className="header-area row">
           <div className="col-lg-12">
 
-            <h1 className="hello-text">Hello! I'm Yunis. <br />
+            <h1 className="hello-text">Hello! I'm Yunis.
               A product designer based in Warsaw
             </h1>
 

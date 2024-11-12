@@ -10,6 +10,14 @@ const Navbar = () => {
    const [navMenu, setNavMenu] = useState(null);
    const { scroll } = useLocomotiveScroll();
 
+   useEffect(() => {
+      if(navMenu) {
+         $('body, html').css('overflow-y', 'hidden');
+      } else {
+         $('body, html').css('overflow-y', 'auto');
+      }
+   })
+
    return (
       <div
          data-scroll-section
@@ -34,6 +42,7 @@ const Navbar = () => {
                            src={PersonMe}
                            width={100}
                            height={100}
+                           alt="Yunis Mikayilov"
                            className="image-opacity-0"
                            onLoadingComplete={(image) => image.classList.remove('image-opacity-0')}
                         />
@@ -56,24 +65,38 @@ const Navbar = () => {
                      <span className="navbar-link navbar-link-button nav-contact__btn">Let's talk</span>
                   </div>
 
-                  <div className="menu-button" onClick={() => navMenu ? setNavMenu(false) : setNavMenu(true)}>
-                     <i id="myDIV" className="fa-solid fa-bars"></i>
+                  <div className={`menu-button ${navMenu === true ? 'show' : navMenu === false ? 'hide' : ''}`} onClick={() => navMenu ? setNavMenu(false) : setNavMenu(true)}>
+                     <div className="line line-1"></div>
+                     <div className="line line-2"></div>
                   </div>
                </div>
             </div>
 
          </div>
-         <div id="myMENU" className={`mobile-menu ${navMenu && 'mystyle'}`}>
-            <a target="_blank" href="https://drive.google.com/file/d/1I_fc_EE6B43vckGk70bEUQcBfu6SIUDx/view">Résumé</a>
-            <Link href="/design-shots" className="navbar-link">Recent Work</Link>
-            <a className="navbar-link nav-contact__btn"
-               onClick={() => {
-                  scroll.scrollTo("bottom", {
-                     duration: .5,
-                  });
-                  setNavMenu(false)
-               }
-               }> Contact</a>
+         <div className={`mobile-menu ${navMenu === true ? 'show' : navMenu === false ? 'hide' : ''}`}>
+            <div className="menu-links__wrapper">
+               <div className="menu__items">
+                  <a target="_blank" href="https://drive.google.com/file/d/1I_fc_EE6B43vckGk70bEUQcBfu6SIUDx/view">Résumé</a>
+               </div>
+               <div className="menu__items">
+                  <Link href="/design-shots" className="navbar-link">Recent Work</Link>
+               </div>
+               {/* <a className="navbar-link nav-contact__btn"
+                  onClick={() => {
+                     scroll.scrollTo("bottom", {
+                        duration: .5,
+                     });
+                     setNavMenu(false)
+                  }
+                  }> Contact</a> */}
+            </div>
+
+            <div className="menu__buttons">
+               <a href="mailto:yunismikail@gmail.com" className="animated-button__cover c-button">
+                  <span className="animated-button__text">Work with me</span>
+                  <span className="animated-button__text">Let's talk</span>
+               </a>
+            </div>
          </div>
       </div>
    )
