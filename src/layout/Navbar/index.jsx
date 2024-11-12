@@ -93,7 +93,7 @@ const Navbar = () => {
 
             <div className="menu__buttons">
                <a href="mailto:yunismikail@gmail.com" className="animated-button__cover c-button">
-                  <span className="animated-button__text">Work with me</span>
+                  <span className="animated-button__text">Contact via Email</span>
                   <span className="animated-button__text">Let's talk</span>
                </a>
             </div>
