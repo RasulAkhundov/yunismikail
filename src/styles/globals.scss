@@ -39,6 +39,10 @@ body {
    overflow-x: hidden;
 }
 
+.overflow-y-hidden {
+   overflow-y: hidden !important;
+}
+
 body {
    font-family: 'Gilroy-Regular';
 }
@@ -134,6 +138,7 @@ img {
    display: flex;
    position: relative;
    z-index: 9;
+   padding: 0 4%;
 
    .navigation-container {
       width: 100%;
@@ -1119,7 +1124,7 @@ header {
 @media only screen and (max-width: 768px) {
    .Navbar {
       .navigation-container {
-         padding: 28px 4%;
+         padding: 28px 0;
 
          .nav-right {
             gap: 16px;

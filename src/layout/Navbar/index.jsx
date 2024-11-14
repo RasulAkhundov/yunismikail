@@ -10,13 +10,31 @@ const Navbar = () => {
    const [navMenu, setNavMenu] = useState(null);
    const { scroll } = useLocomotiveScroll();
 
-   useEffect(() => {
-      if(navMenu) {
-         $('body, html').css('overflow-y', 'hidden');
+   console.log(scroll)
+
+   const setOverflowFunc = () => {
+      if (window.innerWidth <= 1024) {
+         if (navMenu) {
+            $('body, html').addClass('overflow-y-hidden');
+         } else {
+            $('body, html').removeClass('overflow-y-hidden');
+         }
       } else {
-         $('body, html').css('overflow-y', 'auto');
+         $('body, html').removeClass('overflow-y-hidden');
       }
-   })
+      if(navMenu) {
+         scroll.stop();
+      } else {
+         scroll.start();
+      }
+   }
+   setOverflowFunc();
+
+   useEffect(() => {
+      $(window).on('resize', () => {
+         setOverflowFunc();
+      });
+   }, [])
 
    return (
       <div
