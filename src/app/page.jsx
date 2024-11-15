@@ -134,7 +134,9 @@ const Home = () => {
               <div className="animated-button__cover"
                 onClick={() => {
                   scroll.scrollTo("bottom", {
-                    duration: .5,
+                    'offset': 0,
+                    'duration': 1000,
+                    'easing': [0.25, 0.00, 0.35, 1.00],
                   });
                 }
                 }>

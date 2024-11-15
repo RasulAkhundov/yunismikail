@@ -22,7 +22,7 @@ const Navbar = () => {
       } else {
          $('body, html').removeClass('overflow-y-hidden');
       }
-      if(navMenu) {
+      if (navMenu) {
          scroll.stop();
       } else {
          scroll.start();
@@ -75,7 +75,9 @@ const Navbar = () => {
                   <div className="navbar-button-cover"
                      onClick={() => {
                         scroll.scrollTo("bottom", {
-                           duration: .5,
+                           'offset': 0,
+                           'duration': 1000,
+                           'easing': [0.25, 0.00, 0.35, 1.00],
                         });
                      }
                      }>
